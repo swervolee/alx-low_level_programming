@@ -2,10 +2,10 @@
 #include <unistd.h>
 /**
  *main - entry point
- *Return:0
+ *Return:1
  */
 int main(void)
 {
-	write(1, "and that piece of art is usefull\" - Dora Korpar, 2015-10-19\n");
-	return(1);
+	write(1, "and that piece of art is usefull\" - Dora Korpar, 2015-10-19\n", 59);
+	return (1);
 }
