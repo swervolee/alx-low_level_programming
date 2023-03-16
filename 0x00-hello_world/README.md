@@ -5,3 +5,4 @@
 | 1-compiler | pre process a file and compile it |
 | 2-assembler | assembles code but not link |
 | 3-name | compiles a file |
+| 4-puts.c | prints aout a string |
