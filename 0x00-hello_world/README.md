@@ -7,3 +7,4 @@
 | 3-name | compiles a file |
 | 4-puts.c | prints aout a string using puts |
 | 5-printf.c | prints a string using printf |
+| 6-size c | printing the byte size |
