@@ -6,3 +6,4 @@
 | 3-print_alphabet | prints lower and upper alphabets |
 | 4-print_alphabet.c | print all alphabet letters but q and e |
 | 5-print_numbers | prints the base 10 numbers |
+| 6-print_numberz.z | prints the base 10 numbers |
