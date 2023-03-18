@@ -8,3 +8,4 @@
 | 5-print_numbers | prints the base 10 numbers |
 | 6-print_numberz.z | prints the base 10 numbers |
 | 7 print alphabet | prints the alphabet in reverse |
+| 8-print_base16 | prints the base 16 numbers and letters |
