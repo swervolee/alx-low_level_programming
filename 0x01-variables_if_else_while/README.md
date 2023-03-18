@@ -5,3 +5,4 @@
 | 2 print the alphabet | the program prints the alphabet |
 | 3-print_alphabet | prints lower and upper alphabets |
 | 4-print_alphabet.c | print all alphabet letters but q and e |
+| 5-print_numbers | prints the base 10 numbers |
