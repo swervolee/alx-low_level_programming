@@ -13,7 +13,7 @@ int main(void)
 		a = 48;
 		while (a < 58)
 		{
-			if (a != n && n < a)
+			if (n != a && n < a)
 			{
 				putchar(n);
 				putchar(a);
