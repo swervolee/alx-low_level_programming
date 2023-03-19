@@ -17,8 +17,11 @@ int main(void)
 			{
 				putchar(n);
 				putchar(a);
-				putchar(',');
-				putchar(' ');
+				if (n != 56 || a != 57)
+				{
+					putchar(',');
+					putchar(' ');
+				}
 			}
 			a++;
 		}
