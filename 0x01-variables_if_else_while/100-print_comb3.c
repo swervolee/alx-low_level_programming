@@ -1,20 +1,26 @@
 #include <stdio.h>
+
 /**
  *main - entry point
  *Return:0
  */
 int main(void)
 {
-	int n;
-	
-	for (n = 48; n < 58; n++)
+	int n = 48;
+	int a;
+
+	while (n < 58)
 	{
-		putchar(n);
-		if (n != 57)
+		a = 48;
+		while (a < 58)
 		{
+			putchar(a);
+			putchar(n);
+			a++;
 			putchar(',');
 			putchar(' ');
 		}
+		n++;
 	}
 	putchar('\n');
 	return (0);

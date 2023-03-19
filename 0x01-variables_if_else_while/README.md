@@ -10,3 +10,4 @@
 | 7 print alphabet | prints the alphabet in reverse |
 | 8-print_base16 | prints the base 16 numbers and letters |
 | 9-print_comb | printing all combimations of single digit number |
+| 100-print_comb3 | printing a combination of two numbers from 0-100 |
