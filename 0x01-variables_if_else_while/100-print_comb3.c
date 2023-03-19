@@ -1,24 +1,26 @@
 #include <stdio.h>
-
 /**
  *main - entry point
  *Return:0
  */
 int main(void)
 {
-	int n = 48;
-	int a;
+	char n = 48;
+	char a;
 
 	while (n < 58)
 	{
 		a = 48;
 		while (a < 58)
 		{
-			putchar(a);
-			putchar(n);
+			if (a != n && n < a)
+			{
+				putchar(n);
+				putchar(a);
+				putchar(',');
+				putchar(' ');
+			}
 			a++;
-			putchar(',');
-			putchar(' ');
 		}
 		n++;
 	}
