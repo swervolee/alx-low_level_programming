@@ -8,8 +8,12 @@ void times_table(void)
 	int a;
 	int b;
 	int c;
+	int count = 0;
 
 	for (a = 0; a <= 9; a++)
+	{
+		count++
+			}
 		for (b = 1; b <= 9; b++)
 		{
 			c = (a * b);
@@ -18,5 +22,8 @@ void times_table(void)
 			_putchar(',');
 			_putchar(' ');
 		}
-	_putchar('\n');
+		if (count == 9)
+		{
+			_putchar('\n');
+		}
 }
