@@ -22,5 +22,6 @@ void times_table(void)
 			if (count == 9)
 			{
 				_putchar('\n');
+			}
 		}
 }
