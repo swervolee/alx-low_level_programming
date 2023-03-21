@@ -8,3 +8,4 @@
 | task 2 | printing the alphabet 10 times |
 | task 3 | checks if a letter is casefold |
 | task 4 | checks if a letter is alphabetical |
+| task 5 | checks if a number is positive,zero or negative |
