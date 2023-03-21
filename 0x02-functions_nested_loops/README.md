@@ -12,3 +12,5 @@
 | task 6 | printing the absolute value |
 | task 7 | printing the last digit |
 | task 8 | printing time |
+| task 9 | printing a table of 9 |
+| task  10 | printing addition |
