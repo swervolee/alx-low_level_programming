@@ -1,0 +1,12 @@
+#include "main.h"
+/**
+ *int _islower(int c) - checks if a letter is casefold
+ *Return: 0
+ */
+int _islower(c)
+{
+	if (c >= 'a' && c <= 'z')
+		return (1);
+	else
+		return (0);
+}
