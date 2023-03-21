@@ -3,7 +3,7 @@
  *_islower - if a letter is casefold
  *Return: 0
  */
-int _islower(c)
+int _islower(int c)
 {
 	if (c >= 'a' && c <= 'z')
 		return (1);
