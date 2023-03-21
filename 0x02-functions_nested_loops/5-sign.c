@@ -18,7 +18,7 @@ int print_sign(int n)
 	}
 	else
 	{
-		_zputchar('-');
+		_putchar('-');
 		return (-1);
 	}
 }
