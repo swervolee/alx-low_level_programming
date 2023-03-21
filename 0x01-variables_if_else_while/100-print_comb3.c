@@ -5,21 +5,21 @@
  */
 int main(void)
 {
-	char n = 48;
-	char a;
+	int n = '0';
+	int a;
 
-	while (n < 58)
+	while (n <= '9')
 	{
-		a = 48;
-		while (a < 58)
+		a = '0';
+		while (a <= '9')
 		{
 			if (n != a && n < a)
 			{
 				putchar(n);
 				putchar(a);
-				if (n != 56 || a != 57)
+				if (n == 8 && a ==9)
 				{
-					putchar(',');
+					//putchar(',');
 					putchar(' ');
 				}
 			}
