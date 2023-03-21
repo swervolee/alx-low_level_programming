@@ -1,0 +1,17 @@
+#include <stdio.h>
+#include <stdlib.h>
+/**
+*main - entry point
+*Return:0
+*/
+int main(void)
+{
+	int a = 0;
+	int b;
+
+	for (a %= 10; a <= 11; a++)
+	{
+		printf("%d", a);
+	}
+	return (0);
+}
