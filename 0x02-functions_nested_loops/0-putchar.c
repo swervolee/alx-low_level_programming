@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <main.h>
+#include <_putchar.c>
 /**
  *main - entry point
  *Return:0
