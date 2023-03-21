@@ -7,3 +7,4 @@
 | task 1 | printing the alphabet |
 | task 2 | printing the alphabet 10 times |
 | task 3 | checks if a letter is casefold |
+| task 4 | checks if a letter is alphabetical |
