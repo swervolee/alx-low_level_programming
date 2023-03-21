@@ -19,9 +19,8 @@ void times_table(void)
 			_putchar(',');
 			_putchar(' ');
 			count++;
-		}
-		if (count == 9)
-		{
-			_putchar('\n');
+			if (count == 9)
+			{
+				_putchar('\n');
 		}
 }
