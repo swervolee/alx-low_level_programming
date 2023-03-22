@@ -1,17 +1,26 @@
 #include <stdio.h>
-#include <stdlib.h>
 /**
-*main - entry point
-*Return:0
-*/
+ *times_table - prints a multiple table
+ *Return:0
+ */
 int main(void)
 {
-	int a = 0;
-	int b;
+	int num, mult, prod;
 
-	for (a %= 10; a <= 11; a++)
+	for (num = 0; num <= 9; num++)
 	{
-		printf("%d", a);
+		putchar('0');
+		/**for (mult = 1; mult <= 9; mult++)
+		{
+			putchar(',');
+			putchar(' ');
+			prod = num * mult;
+			if (prod <= 9)
+				putchar(' ');
+			else
+				putchar((prod / 10) + '0');
+			putchar((prod % 10) + '0');
+		}**/
+		putchar('\n');
 	}
-	return (0);
 }
