@@ -11,6 +11,10 @@ void print_to_98(int n)
 		{
 			_putchar((n / 10) + '0');
 			_putchar((n % 10) + '0');
-			_putchar(',');
+			if (((n / 10) + '0') != 9 && ((n % 10) + '0') != 8)
+			{
+				_putchar(',');
+				_putchar(' ');
+			}
 		}
 }
