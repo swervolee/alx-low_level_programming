@@ -5,4 +5,5 @@
 | task 2 | doing multplication |
 | task 3 | printing numbers 1-9 |
 | task 4 | printing all numbers except 2 and 4 |
+| task 5 | printing numbers 0 - 14 ten times |
 | 

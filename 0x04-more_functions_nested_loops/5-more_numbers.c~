@@ -1,0 +1,30 @@
+#include "main.h"
+/**
+ *more_numbers - prints from 1 - 14
+ *Return: 0
+ */
+void more_numbers(void)
+{
+	int b = 0;
+	int a;
+
+	while (b <= 10)
+	{
+		a = 0;
+
+		while (a <= 14)
+		{
+			if (a < 10)
+			{
+				_putchar(a + '0');
+			}
+			else
+			{
+				_putchar((a / 10) + '0');
+				_putchar((a % 10) + '0');
+			}
+			a++;
+		}
+		b++;
+	}
+}
