@@ -6,4 +6,5 @@
 | task 3 | printing numbers 1-9 |
 | task 4 | printing all numbers except 2 and 4 |
 | task 5 | printing numbers 0 - 14 ten times |
+| task 6 | prints a straight line n times |
 | 
