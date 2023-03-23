@@ -1,0 +1,19 @@
+#include "main.h"
+/**
+ *print_diagonal - printing diagonally
+ *@n: the length of the line
+ *Return: 0
+ */
+void print_diagonal(int n)
+{
+	if (n > 0)
+	{
+		int i;
+
+		for (i = 0; i <= n; i++)
+		{
+			_putchar(' ' * (n-1));
+			_putchar(92);
+		}
+	}
+}
