@@ -5,27 +5,25 @@
  */
 void more_numbers(void)
 {
-	int b = 0;
-	int a;
+	int n = 48;
+	int l = 0;
+	int reset = 0;
 
-	while (b <= 10)
+	while (l < 10)
 	{
-		a = 0;
-
-		while (a <= 14)
+		while (n <= 62)
 		{
-			if (a < 10)
+			if (n > 57)
 			{
-				_putchar(a + '0');
+				reset = 10;
+				_putchar(49);
 			}
-			else
-			{
-				_putchar((a / 10) + '0');
-				_putchar((a % 10) + '0');
-			}
-			a++;
+			_putchar(n - reset);
+			n++;
 		}
-		b++;
-		_putchar('\n');
+		n = 48;
+		reset = 0;
+		l++;
+		_putchar(10);
 	}
 }
