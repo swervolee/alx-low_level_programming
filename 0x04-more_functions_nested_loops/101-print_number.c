@@ -27,7 +27,7 @@ void print_number(int n)
 	number = n2;
 	while (base10 > 1)
 	{
-		_putchar((number / base10)+'0');
+		_putchar((number / base10) + '0');
 		number = number % base10;
 		base10 = base10 / 10;
 	}
