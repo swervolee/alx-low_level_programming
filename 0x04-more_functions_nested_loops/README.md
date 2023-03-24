@@ -9,3 +9,5 @@
 | task 6 | prints a straight line n times |
 | task 7 | printing a diagonal line |
 | task 8 | printing a square |
+| task 9 | printing fizz buzz |
+| 
