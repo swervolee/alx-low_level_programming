@@ -1,13 +1,13 @@
-#include <stdio>
+#include <stdio.h>
 /**
  *main - entry point
  *Return: 0
  */
 int main(void)
 {
-	int i = 0;
+	int n = 1;
 
-	while (i <= 100)
+	while (n < 100)
 	{
 		if (n % 15 == 0)
 		{
