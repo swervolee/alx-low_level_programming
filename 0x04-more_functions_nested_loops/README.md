@@ -8,3 +8,4 @@
 | task 5 | printing numbers 0 - 14 ten times |
 | task 6 | prints a straight line n times |
 | task 7 | printing a diagonal line |
+| task 8 | printing a square |
