@@ -12,4 +12,5 @@
 | task 4 | printing a string in reverse | void print_rev(char *s) |
 | task 5 | reversing a string | void rev_string(char *s) |
 | task 6 | printing every other number | void puts2(char *str) |
+| task 7 | printing half the string | void puts_half(char *str) |
 | 
