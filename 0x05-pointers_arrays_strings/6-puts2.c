@@ -10,12 +10,7 @@ void puts2(char *str)
 
 	while (str[i] != '\0')
 	{
-		if ('a' <= str[i] <= 'z' && 'Z' <= str[i] <= 'Z')
-		{
-			_putchar(str[i]);
-		}
-		else
-			continue;
+		_putchar(str[i]);
 		i += 2;
 	}
 	_putchar(10);
