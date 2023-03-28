@@ -15,7 +15,7 @@ int _atoi(char *s)
 
 	switch (sign)
 	{
-	case(s[i] == '-')
+	case(s[i] == '-'):
 	{
 		sign = -1;
 		i++;
