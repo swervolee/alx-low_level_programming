@@ -21,6 +21,7 @@ int _atoi(char *s)
 		i++;
 		break;
 	}
+	}
 	for (; s[i] != '\0' ; i++)
 	{
 		if (isdigit(s[i]))
