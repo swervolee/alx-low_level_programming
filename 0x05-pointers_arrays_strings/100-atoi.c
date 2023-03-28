@@ -18,6 +18,10 @@ int _atoi(char *s)
 		sign = -1;
 		i++;
 	}
+	else if (s[0] == '-')
+	{
+		sign = -1;
+	}
 	for (; s[i] != '\0' ; i++)
 	{
 		if (isdigit(s[i]))
