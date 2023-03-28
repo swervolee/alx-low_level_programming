@@ -12,11 +12,20 @@ int _atoi(char *s)
 	int sign = 1;
 	int i = 0;
 	int digit;
+	int m;
 
 	if (isdigit(s[i + 1]) && s[i] == '-')
 	{
 		sign = -1;
 		i++;
+	}
+	m = i;
+	for (; m >= 0; m--)
+	{
+		if (s[m] == '-')
+		{
+			sign = -1;
+		}
 	}
 	for (; s[i] != '\0' ; i++)
 	{
