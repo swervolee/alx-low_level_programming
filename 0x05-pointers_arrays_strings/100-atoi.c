@@ -13,14 +13,9 @@ int _atoi(char *s)
 	int i = 0;
 	int digit;
 
-	switch (sign)
-	{
-	case(s[i] == '-'):
+	if (s[i] == '-')
 	{
 		sign = -1;
-		i++;
-		break;
-	}
 	}
 	for (; s[i] != '\0' ; i++)
 	{
