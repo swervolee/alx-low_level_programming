@@ -13,12 +13,12 @@ int _atoi(char *s)
 	int i = 0;
 	int digit;
 
-	if ((s[i]) = '-')
+	if ((s[i]) == '-')
 	{
 		sign = -1;
 		i++;
 	}
-	else if ((s[i]) = '+')
+	else if ((s[i]) == '+')
 	{
 		sign = +1;
 		i++;
