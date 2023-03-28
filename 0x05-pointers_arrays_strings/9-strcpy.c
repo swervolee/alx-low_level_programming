@@ -1,3 +1,4 @@
+#include <stdio.h>
 #include "main.h"
 /**
  **_strcpy - the function to perform copying
