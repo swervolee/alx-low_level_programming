@@ -1,3 +1,4 @@
+#include <string.h>
 #include <stdio.h>
 #include "main.h"
 /**
@@ -9,12 +10,15 @@
 char *_strcpy(char *dest, char *src)
 {
 	int i = 0;
+	int p = strlen(src);
 
 	while (src[i] != '\0')
 	{
 		dest[i] = src[i];
 		i++;
 	}
+	for ( ; i < p; i++)
+		dest[i] = '\0';
 	dest[i + 1] = '\0';
 	return (dest);
 }
