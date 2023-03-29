@@ -11,7 +11,7 @@ int _strcmp(char *s1, char *s2)
 
 	while (count1 == 0)
 	{
-		if ((*(s1 + count) == '\0') && (*(s2 + i) == '\0'))
+		if ((*(s1 + count) == '\0') && (*(s2 + count) == '\0'))
 			break;
 		count1 = *(s1 + count1) - *(s2 + count1);
 		count1++;
