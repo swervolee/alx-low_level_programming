@@ -9,14 +9,12 @@ int _strcmp(char *s1, char *s2)
 {
 	int count = 0, count1 = 0;
 
-	while (*(s1 + count) != '\0')
-		count++;
-	while (*(s2 + count1) != '\0')
+	while (count1 == 0)
+	{
+		if ((*(s1 + count) == '\0') && (*(s2 + i) == '\0'))
+			break;
+		count1 = *(s1 + count1) - *(s2 + count1);
 		count1++;
-	if (count == count1)
-		return (0);
-	else if (count < count1)
-		return (-15);
-	else
-		return (15);
+	}
+	return (count1);
 }
