@@ -1,0 +1,11 @@
+#include "main.c"
+/**
+ *string_toupper - transform to uppercase
+ *@char: the char
+ */
+char *string_toupper(char *p)
+{
+	int *s = p;
+
+	while (s != '\0')
+		
