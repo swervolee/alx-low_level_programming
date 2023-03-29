@@ -1,13 +1,14 @@
 #include "main.h"
 /**
  *string_toupper - transform to uppercase
- *@char: the char
+ *@p: the char
+ *Return: 0
  */
 char *string_toupper(char *p)
 {
 	int i = 0;
 
-	while (*(p + i) != '\n')
+	while (*(p + i) != '\0')
 	{
 		if (*(p + i) >= 'a' && *(p + i)  <= 'z')
 		{
