@@ -8,4 +8,5 @@
 | task 2 | string copying |
 | task 3 | string comparing |
 | task 4 | limited array reversing |
+| task 5 | changing string to uppercase |
 | 
