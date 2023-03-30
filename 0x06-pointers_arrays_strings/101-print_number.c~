@@ -1,0 +1,32 @@
+#include "main.h"
+/**
+ *print_number - printing nums
+ *@n: number print
+ *Return: 0
+ */
+void print_number(int n)
+{
+	int number_of_digits = 0, i = 0, result = 0, digit, tmp;
+
+	n < 0 ? _putchar(45) : 0;
+	tmp = n;
+	n == 0 ? _putchar(0 + '0') : 0;
+	while (tmp != 0)
+	{
+		tmp /= 10;
+		number_of_digits++;
+	}
+	number_of_digits = i;
+	while (number_of_digits--)
+	{
+		digit = n % 10;
+		result = (result * 10) + digit;
+		n = n / 10;
+	}
+	while (i--)
+	{
+		digit = result % 10;
+		result /= 10;
+		_putchar(digit + '0');
+	}
+}

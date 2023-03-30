@@ -12,4 +12,5 @@
 | task 6 | capitalizing every word |
 | task-7 | cipher |
 | task-8 | cipher 2 |
+| task 9 | a function to print a number |
 | 
