@@ -9,4 +9,4 @@
 | task 3 | string comparing |
 | task 4 | limited array reversing |
 | task 5 | changing string to uppercase |
-| 
+| task 6 | capitalizing every word |
