@@ -11,3 +11,5 @@
 | task 5 | changing string to uppercase |
 | task 6 | capitalizing every word |
 | task-7 | cipher |
+| task-8 | cipher 2 |
+| 
