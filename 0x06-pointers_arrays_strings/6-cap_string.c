@@ -33,6 +33,5 @@ char *cap_string(char *p)
 
 		i++;
 	}
-
 	return (p);
 }
