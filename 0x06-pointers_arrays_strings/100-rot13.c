@@ -17,6 +17,7 @@ char *rot13(char *s)
 			if (*(s + cnt) == alph[i])
 			{
 				*(s + cnt) = cipher[i];
+				break;
 			}
 		}
 		cnt++;
