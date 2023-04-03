@@ -3,5 +3,6 @@
 
 | task | function |
 | ------ | ------- |
-| task 1 | simulating a memset function |
+| task  | simulating a memset function |
+| task 1 | copying memory |
 | 
