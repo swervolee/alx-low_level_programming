@@ -5,4 +5,6 @@
 | ------ | ------- |
 | task  | simulating a memset function |
 | task 1 | copying memory |
+| task 2 | strspn |
+| task 3 | character location |
 | 
