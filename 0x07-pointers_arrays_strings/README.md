@@ -7,4 +7,5 @@
 | task 1 | copying memory |
 | task 2 | strspn |
 | task 3 | character location |
+| task 4 | character search |
 | 
