@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- *_chessboard - the function
+ *print_chessboard - the function
  *@a: array length
  *return: 0
  */
