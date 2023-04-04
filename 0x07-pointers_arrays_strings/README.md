@@ -9,4 +9,5 @@
 | task 3 | character location |
 | task 4 | character search |
 | task 5 | character search |
-| 
+| task 6 | string to string search |
+| task 7 | printing a chess board |
