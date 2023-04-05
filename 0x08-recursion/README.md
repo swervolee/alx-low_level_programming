@@ -10,4 +10,5 @@
 | task 2 | printing the length of a string |
 | task 3 | printing the factorial of a number |
 | task 4 | exponentiation |
+| task 5 | find the square root of a number |
 | 
