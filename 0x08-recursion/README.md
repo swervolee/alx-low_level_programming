@@ -11,4 +11,5 @@
 | task 3 | printing the factorial of a number |
 | task 4 | exponentiation |
 | task 5 | find the square root of a number |
-| 
+| task 6 | finding the square root |
+| task 7 | establishing prime or not |
