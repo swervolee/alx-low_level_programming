@@ -1,6 +1,8 @@
 #ifndef MAIN_H
 #define MAIN_H
 
+int sqtChecker(int min, int max, int m);
+int refine(int r, int s);
 int _sqrt_recursion(int n);
 int _pow_recursion(int x, int y);
 int factorial(int n);

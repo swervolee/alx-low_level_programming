@@ -1,26 +1,43 @@
 #include "main.h"
-#include <stdio.h>
 
-/**
- * main - check the code
- *
- * Return: Always 0.
- */
-int main(void)
+int refine(int s, int r)
 {
-	int r;
+	if (s * s == r)
+		return (s);
+	else if (s * s > r)
+		return (refine(s - 1, r));
+	else
+		return refine(s + 1, r);
+}
 
-	r = _sqrt_recursion(1);
-	printf("%d\n", r);
-	r = _sqrt_recursion(1024);
-	printf("%d\n", r);
-	r = _sqrt_recursion(16);
-	printf("%d\n", r);
-	r = _sqrt_recursion(17);
-	printf("%d\n", r);
-	r = _sqrt_recursion(25);
-	printf("%d\n", r);
-	r = _sqrt_recursion(-1);
-	printf("%d\n", r);
-	return (0);
+
+#include "main.h"
+/**
+ *_sqrt_recursion - finds a square root
+ *@n: the number to find square root from
+ *Return: the square root
+ */
+
+int _sqrt_recursion(int n)
+{
+	int res;
+
+	if (n < 0)
+	{
+		return (-1);
+	}
+	else if (n == 0 || n == 1)
+	{
+		return (n);
+	}
+	else
+	{
+		res = refine(1, n);
+		if (res * res == n)
+		{
+			return (res);
+		}
+		else
+			return (-1);
+	}
 }
