@@ -1,43 +1,35 @@
 #include "main.h"
 /**
- * sqtChecker - computes square root recursively doing binary search
- *
- * @min: inital number
- *
- * @max: last number within the limit of number
- *
- * @m: given number
- *
- * Return: 1 if not found sqrroot, else sqrroot
+ *refine: function to refine the sqrt
+ *@s: the first parameter
+ *@r: the second parameter
+ *Return: the sqrt
  */
-int sqtChecker(int min, int max, int m)
+int refine(int s, int r)
 {
-	long int guess;
-	if (max >= min)
-	{
-		guess = min + (max - min) / 2;
-		if (guess *guess == m)
-			return (guess);
-		/* following binary search */
-		if (guess *guess > m)
-			return (sqtChecker(min, guess - 1, m));
-		if (guess *guess < m)
-			return (sqtChecker(guess + 1, max, m));
-	}
+	int guess;
+
+	guess = s / 2;
+	if (guess * guess == r)
+		return (guess);
+	if (guess * guess > r)
+		return (refine(s-1, r));
+	if (guess * guess < r)
+		return (refine(s + 1, r));
 	return (-1);
 }
+
 /**
- * _sqrt_recursion - finds the natural square root of a number
- *
- * @n: given number
- *
- * Return: square root of n or -1
+ *_sqrt_recursion - main entry
+ *@n: the integer
+ *Return: sqrt
  */
+
 int _sqrt_recursion(int n)
 {
 	if (n < 0)
 		return (-1);
 	if (n == 0)
 		return (0);
-	return (sqtChecker(1, n, n));
+	return (refine(n, n));
 }
