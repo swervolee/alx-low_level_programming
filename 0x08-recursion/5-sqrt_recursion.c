@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- *refine: function to refine the sqrt
+ *refine - function to refine the sqrt
  *@s: the first parameter
  *@r: the second parameter
  *Return: the sqrt
@@ -13,7 +13,7 @@ int refine(int s, int r)
 	if (guess * guess == r)
 		return (guess);
 	if (guess * guess > r)
-		return (refine(s-1, r));
+		return (refine(s - 1, r));
 	if (guess * guess < r)
 		return (refine(s + 1, r));
 	return (-1);
