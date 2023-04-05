@@ -7,7 +7,7 @@
  */
 int refine(int s, int r)
 {
-	int guess;
+	long long int guess;
 
 	guess = s / 2;
 	if (guess * guess == r)
