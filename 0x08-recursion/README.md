@@ -13,3 +13,5 @@
 | task 5 | find the square root of a number |
 | task 6 | finding the square root |
 | task 7 | establishing prime or not |
+|task 8 | establishing whether a string is a palindrome |
+|
