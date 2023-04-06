@@ -1,6 +1,8 @@
 #ifndef MAIN_H
 #define MAIN_H
 
+int compare(char *str1, char *str2);
+int wildcmp(char *s1, char *s2);
 int str_len(char *s);
 int check_palindrome(char *s, int start, int end);
 int is_palindrome(char *s);

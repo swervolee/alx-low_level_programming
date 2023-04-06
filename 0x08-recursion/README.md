@@ -14,4 +14,4 @@
 | task 6 | finding the square root |
 | task 7 | establishing prime or not |
 |task 8 | establishing whether a string is a palindrome |
-|
+|task 9 | establishing if the two strings are identical |
