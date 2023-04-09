@@ -1,6 +1,6 @@
 #!/bin/bash
 lib_name = "liball.a"
 
-gcc -c *c
+gcc -Wall -pedantic -Werror -Wextra -c *.c
 
-ar -rcs ${lib_name} *o
+ar -rcs liball.a *.o
