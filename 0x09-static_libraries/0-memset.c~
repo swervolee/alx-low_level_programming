@@ -1,0 +1,6 @@
+#include "main.h"
+/**
+ *_memset - writes a memory with constant
+ *@s: the memory
+ *@b: constant
+ *@n
