@@ -1,0 +1,11 @@
+#include "main.h"
+
+/**
+ *_strstr - finds a substring
+ *@haystack:the string
+ *@needle: the substring
+ *Return: '\0' if substring not in haystack
+ */
+char *_strstr(char *haystack, char *needle)
+{
+	
