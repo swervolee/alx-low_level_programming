@@ -9,7 +9,7 @@
 
 int main(int argc, char *argv[])
 {
-	int i, j;
+	int i, j, a = 1, sum;
 
 	if (argc == 1)
 	{
@@ -17,7 +17,7 @@ int main(int argc, char *argv[])
 		return (0);
 	}
 
-	for (i = 0; i != '\0'; i++)
+	for (i = 0; argv[1][i] != '\0'; i++)
 	{
 		if (!(argv[1][i] >= '0' && argv[1][i] <= '9'))
 		{
@@ -26,7 +26,7 @@ int main(int argc, char *argv[])
 		}
 	}
 
-	for (j = 0; j != '\0'; j++)
+	for (j = 0; argv[2][j] != '\0'; j++)
 	{
 		if (!(argv[2][j] >= '0' && argv[2][j] <= '9'))
 		{
@@ -35,6 +35,13 @@ int main(int argc, char *argv[])
 		}
 	}
 
-	printf("%d\n", atoi(argv[1]) + atoi(argv[2]));
+	sum = 0;
+
+	while (a < argc)
+	{
+		sum = sum + atoi(argv[a]);
+		a++;
+	}
+	printf("%d\n", sum);
 	return (0);
 }
