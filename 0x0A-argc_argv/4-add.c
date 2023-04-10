@@ -5,6 +5,7 @@
  *main - function to add two numbers
  *@argc: the number of arguements
  *@argv: the arguements in for of array
+ *Return 0
  */
 
 int main(int argc, char *argv[])
