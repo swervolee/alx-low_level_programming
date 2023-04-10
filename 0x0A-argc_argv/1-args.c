@@ -9,9 +9,6 @@
 
 int main(int argc __attribute__((unused)), char **argv __attribute__((unused)))
 {
-	int i = 1;
-
-	while (i < argc)
-		i++;
+	printf("%d\n", argc -1);
 	return (0);
 }
