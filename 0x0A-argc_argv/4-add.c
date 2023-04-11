@@ -13,10 +13,7 @@ int main(int argc, char *argv[])
 {
 	int i = 1, j = 0, sum = 0;
 
-	if (!(argc > 1))
-		return (0);
-
-	while ( i < argc)
+	while (i < argc)
 	{
 		j = 0;
 
