@@ -15,12 +15,14 @@ char *str_concat(char *s1, char *s2)
 	char *cnt;
 
 	if (!s1 && !s2)
-		return (NULL);
+	{
+		s1 = "";
+		s2 = "";
+	}
 	if (!s2)
 		s2 = "";
 	if (!s1)
 		s1 = "";
-
 
 	while (*(s1 + i) != '\0')
 		i++;
