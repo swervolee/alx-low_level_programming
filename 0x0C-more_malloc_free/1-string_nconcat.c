@@ -1,39 +1,49 @@
 #include "main.h"
 #include <stdlib.h>
-/**
- *string_nconcat - concanates two strings
- *@s1: the first string
- *@s2: the second string
- *@n: the number of bytes to take from s2
- *Return: a pointer to the concanated strings else NULL
- */
 
+/**
+ * string_nconcat - concatenates two strings
+ * @s1: the first string
+ * @s2: the second string
+ * @n: the maximum number of bytes to copy from s2
+ * Return: a pointer to the concatenated string, or NULL if malloc fails
+ */
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
-	unsigned int i = 0, j = 0, m = 0, count;
-	char *str;
+	unsigned int len1 = 0, len2 = 0, i = 0, k = 0;
+	char *result;
 
-	if (!s1)
-		s1 = " ";
-	if (!s2)
-		s2 = " ";
-	while (*(s1 + i) != '\0')
-		i++;
-	while (*(s2 + j) != '\0')
-		j++;
-	if (n > j)
-		n = j;
-	count = i + n;
-	str = malloc(count + 1);
-	if (!str)
+	if (s1 == NULL)
+		s1 = "";
+	if (s2 == NULL)
+		s2 = "";
+
+	while (s1[len1])
+		len1++;
+	while (s2[len2])
+		len2++;
+	if (n > len2)
+		n = len2;
+
+	result = malloc(sizeof(char) * (len1 + n + 1));
+	if (result == NULL)
 		return (NULL);
-	for (m = 0; m < count; m++)
+
+	while (s1[i])
 	{
-		if (m < i)
-			*(str + m) = *(s1 + m);
-		else
-			*(str + m) = *(s2 + m - i);
+		result[k] = s1[i];
+		i++;
+		k++;
 	}
-	*(str + m) = '\0';
-	return (str);
+
+	i = 0;
+	while (i < n)
+	{
+		result[k] = s2[i];
+		i++;
+		k++;
+	}
+
+	result[k] = '\0';
+	return (result);
 }
