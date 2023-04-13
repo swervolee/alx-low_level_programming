@@ -5,7 +5,7 @@
  *@ptr: a pointer to the currently allocated memory
  *@old_size: the size of the old memory
  *@new_size: the new size of memory to be allocated
- *return: a pointer with new size of allocated memory
+ *Return: a pointer with new size of allocated memory
  */
 void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size)
 {
@@ -34,7 +34,7 @@ void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size)
 	if (!new_ptr)
 		return (NULL);
 	q = new_ptr;
-	for(i = 0; i < old_size && i < new_size; i++)
+	for (i = 0; i < old_size && i < new_size; i++)
 		q[i] = p[i];
 	free(ptr);
 	return (new_ptr);
