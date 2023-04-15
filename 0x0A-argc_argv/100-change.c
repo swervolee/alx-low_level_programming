@@ -3,7 +3,7 @@
 /**
  *main -  program that prints the minimum number of coins to make change for an amount of money.
  *@argc: the arguement count
- *argv: the arguement vector
+ *@argv: the arguement vector
  *Return: the lowest number of change
  */
 
