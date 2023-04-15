@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 /**
- *main -  program that prints the minimum number of coins to make change for an amount of money.
+ *main -  program that prints the minimum number of coins to make change
  *@argc: the arguement count
  *@argv: the arguement vector
  *Return: the lowest number of change
