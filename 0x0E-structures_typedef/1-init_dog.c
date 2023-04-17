@@ -2,10 +2,11 @@
 #include <stdlib.h>
 /**
  *init_dog - a function to describe a dog
+ *@d: the struct
  *@name:the dogs name
  *@age: the dogs age
  *@owner: the owner of the dog
- *Return 0
+ *Return: 0
  */
 
 void init_dog(struct dog *d, char *name, float age, char *owner)
