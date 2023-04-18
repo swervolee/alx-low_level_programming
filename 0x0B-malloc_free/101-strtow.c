@@ -37,14 +37,14 @@ int word_no(char *string)
 char **strtow(char *str)
 {
 	char **dp, *tmp;
-	int slen = 0, word, i = 0, count = 0, start, end, o = 0;
+	int slen = 0, word, i = 0, count = 0, start = 0, end = 0, o = 0;
 
 	while (str[slen])
 		slen++;
 	word = word_no(str);
 	if (word == 0)
 		return (NULL);
-	dp = malloc((word + 1) * sizeof(char));
+	dp = malloc((word + 1) * sizeof(char*));
 	if (!dp)
 		return (NULL);
 	for (i = 0; i <= slen; i++)
@@ -56,7 +56,12 @@ char **strtow(char *str)
 				end = i;
 				tmp = malloc((count + 1) * sizeof(char));
 				if (!tmp)
+				{
+					for (i = 0; i < o; i++)
+						free(dp[i]);
+					free(dp);
 					return (NULL);
+				}
 				while (start < end)
 					*tmp++ = str[start++];
 				*tmp = '\0';
