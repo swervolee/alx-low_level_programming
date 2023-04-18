@@ -44,7 +44,7 @@ char **strtow(char *str)
 	word = word_no(str);
 	if (word == 0)
 		return (NULL);
-	dp = malloc((word + 1) * sizeof(char*));
+	dp = malloc((word + 1) * sizeof(char *));
 	if (!dp)
 		return (NULL);
 	for (i = 0; i <= slen; i++)
