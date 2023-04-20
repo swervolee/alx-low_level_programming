@@ -1,0 +1,1 @@
+This is a project from Holberton school that deals with variadic functions.Variadic functions are function that take a number of arguements .
