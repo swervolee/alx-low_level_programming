@@ -32,7 +32,7 @@ void print_all(const char * const format, ...)
 		case 's':
 			s = va_arg(agstna, char *);
 			if (!s)
-				printf("(nil)"), j = 1;
+				printf("(nil)");
 			printf("%s", s), j = 1;
 			break;
 
