@@ -6,35 +6,35 @@
  */
 void print_all(const char * const format, ...)
 {
-	unsigned int i = 0, j, u = 0;
+	unsigned int ba = 0, j, count = 0;
 	va_list va;
-	char *elmt = "cifs", *a;
+	char *element = "cifs", *a;
 
 	va_start(va, format);
-	while (format && format[i])
+	while (format && format[ba])
 	{
 		j = 0;
-		while (elmt[j])
+		while (element[j])
 		{
-			if (format[i] == elmt[j] && u)
+			if (format[ba] == element[j] && count)
 			{
 				printf(", ");
 				break;
 			} j++;
 		}
-		switch (format[i])
+		switch (format[ba])
 		{
 		case 'c':
-			printf("%c", va_arg(va, int)), u = 1;
+			printf("%c", va_arg(va, int)), count = 1;
 			break;
 		case 'i':
-			printf("%d", va_arg(va, int)), u = 1;
+			printf("%d", va_arg(va, int)), count = 1;
 			break;
 		case 'f':
-			printf("%f", va_arg(va, double)), u = 1;
+			printf("%f", va_arg(va, double)), count = 1;
 			break;
 		case 's':
-			a = va_arg(va, char *), u = 1;
+			a = va_arg(va, char *), count = 1;
 			if (!a)
 			{
 				printf("(nil)");
@@ -43,7 +43,7 @@ void print_all(const char * const format, ...)
 			printf("%s", a);
 			break;
 		}
-		i++;
+		ba++;
 	}
 	printf("\n"), va_end(va);
 }
