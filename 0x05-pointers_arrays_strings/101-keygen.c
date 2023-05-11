@@ -19,4 +19,5 @@ int main(void)
 		printf("%c", num);
 	}
 	printf("%c", limit);
+	return (0);
 }
