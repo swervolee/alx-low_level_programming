@@ -9,7 +9,7 @@
 
 int main(void)
 {
-	int limit = 2772, j, num;
+	int limit = 2772, i, num;
 
 	srand(time(NULL));
 	for (i = 0; limit > 122; i++)
