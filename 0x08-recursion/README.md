@@ -7,5 +7,8 @@
 	>has been used
 	
 	
-| TASK | description |
+	
+	
+| TASK | DESCRIPTION |
 | ----- | ---------- |
+| [task 0](0-puts_recursion.c) | *this function prints a string using recursion |
