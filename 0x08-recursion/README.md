@@ -12,3 +12,6 @@
 | TASK | DESCRIPTION |
 | ----- | ---------- |
 | [task 0](0-puts_recursion.c) | *this function prints a string using recursion |
+| [task 1](1-print_rev_recursion) | *this function prints a string using recursion |
+| [task 2](2-strlen_recursion.c) | *this function finds the length of a string |
+| [task 3](3-factorial) | *finds the factorial of a number |
