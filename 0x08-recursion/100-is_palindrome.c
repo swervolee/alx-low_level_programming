@@ -1,6 +1,20 @@
 #include "main.h"
 
 /**
+ *str_len - finds the length of a string
+ *@s: the input string
+ *@i: the length counter
+ *Return: the length of the string
+ */
+
+int str_len(char *s, int i)
+{
+	if (s[i] == '\0')
+		return (i);
+	return (str_len(s, i + 1));
+}
+
+/**
  * pal_check - a helper function to check for palindrome
  * @s: the input string
  * @start: the starting index
@@ -26,8 +40,7 @@ int is_palindrome(char *s)
 	int start = 0;
 	int end = 0;
 
-	while (s[end])
-		end++;
+	end = str_len(s, end);
 	if (end <= 1)
 		return (1);
 	end--;
