@@ -11,13 +11,14 @@
 int main(int ac, char **av)
 {
 	int array[] = {25, 10, 5, 2, 1}, i = 0, j = 0, count = 0;
-	int num = atoi(av[1]);
+	int num;
 
-	if (ac != 2 || ac == 1)
+	if (ac == 1 || ac > 2)
 	{
 		printf("Error\n");
 		return (1);
 	}
+	num = atoi(av[1]);
 
 	if (num < 0)
 	{
