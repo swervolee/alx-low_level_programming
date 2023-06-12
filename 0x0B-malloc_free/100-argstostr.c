@@ -34,6 +34,6 @@ char *argstostr(int ac, char **av)
 		itr++;
 	}
 
-	array[itr - 1] = '\0';
+	array[length] = '\0';
 	return array;
 }
