@@ -11,10 +11,10 @@ char *str_concat(char *s1, char *s2)
 	int i = 0, j = 0, sum = 0, counter = 0;
 	char *new;
 
-	if (!s1 && s2)
-		return (s2);
-	if (!s2 && s1)
-		return (s1);
+	if (!s1)
+		s1 = "";
+	if (!s2)
+		s2 = "";
 	if (!s1 && !s2)
 		return (NULL);
 
@@ -24,7 +24,7 @@ char *str_concat(char *s1, char *s2)
 		;
 
 	sum = i + j;
-	new = malloc(sum * sizeof(char));
+	new = malloc(sum + 1 * sizeof(char));
 	if (!new)
 		return (NULL);
 
