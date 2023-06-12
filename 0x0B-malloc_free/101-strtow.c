@@ -28,9 +28,14 @@ int count_words(char *str)
 
 char **strtow(char *str)
 {
-	int i, j, word_count, word_length;
+	int i, j, word_count, word_length, check = 0;
 	char **words;
 
+	for (i = 0; str[i]; i++)
+		if (str[i] != ' ')
+			check = 1;
+	if (check == 0)
+		return (NULL);
 	if (str == NULL || *str == '\0')
 		return (NULL);
 	word_count = count_words(str);
