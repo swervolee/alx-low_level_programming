@@ -7,7 +7,7 @@
  */
 int count_words(char *str)
 {
-	int count = 0, int is_word = 0;
+	int count = 0, is_word = 0;
 
 	while (*str)
 	{
