@@ -1,10 +1,4 @@
-#include <stdlib.h>
 #include "main.h"
-#include <unistd.h>
-
-int _strlen(char *str);
-void _print_number(int *number, int size);
-void multiply(char *num1, char *num2);
 
 /**
  * _putchar - writes the character c to stdout
