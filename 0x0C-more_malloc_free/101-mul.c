@@ -9,14 +9,28 @@
 
 int main(int argc, char *argv[])
 {
-	char *num1 = argv[1];
-	char *num2 = argv[2];
+	char *num1;
+	char *num2, check = 0;
 	int i;
 	char error[] = "Error\n";
 
 	if (argc != 3)
 	{
 
+		for (i = 0; i < _strlen(error); i++)
+			_putchar(error[i]);
+		exit(98);
+	}
+	num1 = argv[1];
+	num2 = argv[2];
+	for (i = 0; num1[i]; i++)
+		if (!(num1[i] >= 48) || !(num1[i] <= 57))
+			check = 1;
+	for (i = 0; num2[i]; i++)
+		if (!(num2[i] >= 48) || !(num2[i] <= 57))
+			check = 1;
+	if (check == 1)
+	{
 		for (i = 0; i < _strlen(error); i++)
 			_putchar(error[i]);
 		exit(98);
