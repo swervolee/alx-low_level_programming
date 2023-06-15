@@ -9,12 +9,12 @@
 int *array_range(int min, int max)
 {
 	int i, count = 0;
-	int *array = NULL;
+	int *array = NULL, trace = min;
 
 	if (min > max)
 		return (NULL);
-	for (i = 0; i <= max; i++)
-		count++;
+	for (i = 0; trace <= max; i++)
+		count++, trace++;
 	array = malloc(sizeof(int) * count);
 	if (!array)
 		return (NULL);
