@@ -5,9 +5,6 @@
 [![Alt Text](https://media.giphy.com/media/RbDKaczqWovIugyJmW/giphy.gif)](https://giphy.com/gifs/looneytunesworldofmayhem-world-of-mayhem-looney-tunes-ltwom-RbDKaczqWovIugyJmW)
 
 
-## CHOOSE ONE DOLL DOLL!
-
-
 ![Cool GIF](https://media2.giphy.com/media/bGgsc5mWoryfgKBx1u/200w.webp?cid=ecf05e47t5rzb3wgxcwqb2vugf4v2y9mxgdk8v2b5w35u23n&ep=v1_gifs_search&rid=200w.webp&ct=g)
 
 ### Overview :eyes::keyboard:
