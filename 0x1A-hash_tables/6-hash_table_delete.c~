@@ -1,0 +1,28 @@
+#include "hash_tables.h"
+
+
+
+void hash_table_print(const hash_table_t *ht)
+{
+    hash_node_t *tmp = NULL, *next = NULL;
+
+    if (ht)
+    {
+        for (unsigned long int i = 0; i < ht->size; i++)
+        {
+            tmp = ht->array[i];
+
+            while (tmp)
+            {
+                free(tmp->key);
+                free(tmp->value);
+                next = tmp->next;
+                free(tmp);
+                tmp = next;
+            }
+        }
+
+	free(ht->array);
+	free(ht);
+    }
+}
