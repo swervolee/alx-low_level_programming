@@ -27,11 +27,9 @@ void hash_table_print(const hash_table_t *ht)
 			while (tmp)
 			{
 				if (check == 1)
-					printf("'%s': '%s'", \
-					       tmp->key, tmp->value);
+					printf("'%s': '%s'", tmp->key, tmp->value);
 				else
-					printf(", '%s': '%s'", \
-					       tmp->key, tmp->value);
+					printf(", '%s': '%s'", tmp->key, tmp->value);
 				tmp = tmp->next;
 			}
 		}
