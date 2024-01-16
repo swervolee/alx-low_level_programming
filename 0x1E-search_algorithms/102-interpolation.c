@@ -19,7 +19,7 @@ int recursive_interpolation(int *array, int Low, int High,
 		pos = Low + (((double)(High - Low) / (array[High] - array[Low]))
 			     * (search - array[Low]));
 
-	printf("Value checked array [%d] = [%d]\n", pos, array[pos]);
+	printf("Value checked array[%d] = [%d]\n", pos, array[pos]);
 	if (array[pos] == search)
 		return (pos);
 	if (array[pos] < search)
