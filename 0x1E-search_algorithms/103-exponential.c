@@ -1,29 +1,5 @@
 #include "search_algos.h"
 
-/**
- *print_array - prints an array
- *@arr: array to print
- *@lower: start index
- *@upper: end index
- *Return: nothing
- */
-
-void print_array(int *arr, int lower, int upper)
-{
-	int i;
-
-	printf("Searching in array: ");
-
-	for (i = lower; i <= upper; i++)
-	{
-		printf("%d", arr[i]);
-		if (i != upper)
-			printf(", ");
-	}
-
-	printf("\n");
-}
-
 
 /**
  *binary_search - formulates the binary search algorithm
@@ -33,17 +9,21 @@ void print_array(int *arr, int lower, int upper)
  *Return: found value index else -1
  */
 
-int binary_search(int *array, size_t size, int value)
+int binary_search2(int *array, int left, int right, int value)
 {
-	int L, R, M;
+	int L, R, M, i;
 
-	L = 0;
-	R = size - 1;
+	L = left;
+	R = right;
 
 	while (L <= R)
 	{
-		print_array(array, L, R);
-		M = (L + R) / 2;
+		printf("Searching in array: ");
+
+		for (i = L; i < R; i++)
+			printf("%d, ", array[i]);
+		printf("%d\n", array[i]);
+		M = L + (R - L) / 2;
 
 		if (array[M] == value)
 			return (M);
@@ -68,7 +48,7 @@ int binary_search(int *array, size_t size, int value)
 
 int exponential_search(int *array, size_t size, int value)
 {
-	int i, j, array2[SIZE], left, right, bin_search;
+	int left, right, i;
 
 	i = 1;
 
@@ -78,18 +58,11 @@ int exponential_search(int *array, size_t size, int value)
 	{
 		printf("Value checked array[%d] = [%d]\n", i, array[i]);
 		i *= 2;
-		if (array[i] == value)
-			return (i);
 	}
 
 	left = i / 2;
 	right = i < (int)size ? i : i - 1;
-
-	for (j = left; j <= right; j++)
-		array2[j - left] = array[j];
 	printf("Value found between indexes [%d] and [%d]\n", left, right);
 
-	bin_search = binary_search(array2, (right - left) + 1, value);
-
-	return (bin_search != -1 ? bin_search + left : bin_search);
+	return (binary_search2(array, left, right, value));
 }
