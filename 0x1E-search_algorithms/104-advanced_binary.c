@@ -1,27 +1,48 @@
 #include "search_algos.h"
 
 /**
- *print_array - prints an array
- *@arr: array to print
- *@lower: start index
- *@upper: end index
- *Return: nothing
+ *Recursive_binary - recursive binary search
+ *@array: search array
+ *@left: lower limit
+ *@right: upper limit
+ *@value: value in search
+ *@dflt: default array length
+ *Return: value found index else -1
  */
 
-void print_array(int *arr, int lower, int upper)
+int Recursive_binary(int *array, int left, int right, int value, int dflt)
 {
-	int i;
+	int mid, i;
 
-	printf("Searching in array: ");
+	i = left;
 
-	for (i = lower; i <= upper; i++)
+	mid = (left + right) / 2;
+
+	if (left > right || right >= dflt)
+		return (-1);
+
+	printf("Searching in the array: ");
+
+	while (i < right)
 	{
-		printf("%d", arr[i]);
-		if (i != upper)
-			printf(", ");
+		printf("%d, ", array[i]);
+		i++;
 	}
+	printf("%d\n", array[i]);
 
-	printf("\n");
+	if (array[mid] == value)
+	{
+		if (array[mid - 1] == value)
+			return (Recursive_binary(array, mid - 1, right - 1,
+						 value, dflt));
+		return (mid);
+	}
+	if (array[mid] > value)
+		return (Recursive_binary(array, left, mid - 1, value, dflt));
+	if (array[mid]   < value)
+		return (Recursive_binary(array, mid + 1, right, value, dflt));
+
+	return (-1);
 }
 
 
@@ -35,41 +56,5 @@ void print_array(int *arr, int lower, int upper)
 
 int advanced_binary(int *array, size_t size, int value)
 {
-	int L, R, M, index;
-
-	L = 0;
-	R = size - 1;
-	index = -1;
-
-	while (L <= R)
-	{
-		print_array(array, L, R);
-		M = (L + R) / 2;
-
-		if (array[M] == value)
-		{
-			index = M;
-			printf("Searching in array: ");
-			while (array[index] == value)
-			{
-				if (array[index - 1] != value &&
-				    (index - 1) >= 0)
-				{
-					printf("%d\n", array[index]);
-					return (index);
-				}
-				printf("%d, ", array[index]);
-				index--;
-			}
-			return (M);
-		}
-
-		if (array[M] < value)
-			L = M + 1;
-
-		if (array[M] > value)
-			R = M - 1;
-	}
-
-	return (index);
+	return (Recursive_binary(array, 0, (int)size - 1, value, (int)size));
 }
