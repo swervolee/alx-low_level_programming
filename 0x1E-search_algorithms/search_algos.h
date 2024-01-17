@@ -2,11 +2,10 @@
 #define SEARCH_ALGOS_H
 #include <stdio.h>
 #include <math.h>
-#define SIZE 1024
 
 
 /*search algorithms headerfiles*/
-
+int advanced_binary(int *array, size_t size, int value);
 int binary_search2(int *array, int left, int right, int value);
 int linear_search(int *array, size_t size, int value);
 int binary_search(int *array, size_t size, int value);
