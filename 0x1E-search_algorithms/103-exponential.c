@@ -2,10 +2,11 @@
 
 
 /**
- *binary_search - formulates the binary search algorithm
+ *binary_search2 - formulates the binary search algorithm
  *@array: search array
- *@size: size of array
- *@value: the value in search
+ *@left: lower limit
+ *@right: upper limit
+ *@value: the value to search for
  *Return: found value index else -1
  */
 
