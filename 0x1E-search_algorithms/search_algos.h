@@ -2,6 +2,8 @@
 #define SEARCH_ALGOS_H
 #include <stdio.h>
 #include <math.h>
+#define SIZE 1024
+
 
 /*search algorithms headerfiles*/
 
@@ -12,7 +14,7 @@ void print_array(int *arr, int lower, int upper);
 int jump_search(int *array, size_t size, int value);
 int recursive_interpolation(int *array, int Low, int High, int search, int dflt);
 int interpolation_search(int *array, size_t size, int value);
-
+int exponential_search(int *array, size_t size, int value);
 
 
 #endif
