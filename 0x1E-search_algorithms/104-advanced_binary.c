@@ -21,7 +21,7 @@ int Recursive_binary(int *array, int left, int right, int value, int dflt)
 	if (left > right || right >= dflt)
 		return (-1);
 
-	printf("Searching in the array: ");
+	printf("Searching in array: ");
 
 	while (i < right)
 	{
