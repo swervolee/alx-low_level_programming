@@ -56,5 +56,7 @@ int Recursive_binary(int *array, int left, int right, int value, int dflt)
 
 int advanced_binary(int *array, size_t size, int value)
 {
+	if (!array)
+		return -1;
 	return (Recursive_binary(array, 0, (int)size - 1, value, (int)size));
 }
