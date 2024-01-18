@@ -12,21 +12,28 @@
 
 int Recursive_binary(int *array, int left, int right, int value, int dflt)
 {
-	int mid, i;
+	int mid, i, flag;
 
-	i = left, mid = (left + right) / 2;
+	i = left, mid = (left + right) / 2, flag = 1;
 
 	if (left > right || right >= dflt)
 		return (-1);
-	printf("Searching in array: ");
 	while (true)
 	{
-		if (i >= right)
+		if (i == left)
+			printf("Searching in array: ");
+		if (i == right)
+			printf("%d\n", array[i]);
+
+		if (i == right && array[mid] == value && flag)
+		{
+			i = left - 1, flag = 0;
+		}
+		if (i == right)
 			break;
 		printf("%d, ", array[i]);
 		i++;
 	}
-	printf("%d\n", array[i]);
 
 	if (array[mid] == value)
 		return (mid);
